@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshad Karadan - Content Developer & Videographer</title>
+    <style>
+        :root {
+            --primary: #3a86ff;
+            --secondary: #8338ec;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+        h2 {
+            color: var(--primary);
+            margin-top: 40px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 5px;
+        }
+        h3 {
+            margin: 25px 0 10px;
+            color: var(--dark);
+        }
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .job, .education-item {
+            margin-bottom: 25px;
+        }
+        .job-title {
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .date {
+            color: var(--gray);
+            font-style: italic;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background-color: #e9ecef;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .work-samples {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .sample-card {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .sample-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .sample-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .thumbnail-container {
+            position: relative;
+        }
+        .sample-info {
+            padding: 15px;
+        }
+        .certificate-item {
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background-color: var(--dark);
+            color: white;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .job-title {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .work-samples {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://drive.google.com/uc?export=view&id=1FlinwNudCmQNo9lpeVUW_1XVLePh6ciw" alt="Anshad Karadan" class="profile-pic">
+            <h1>ANSHAD KARADAN</h1>
+            <p class="tagline">Content Developer | Videographer | Digital Creator</p>
+            <div class="contact-info">
+                <a href="tel:+971568565430">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    +971 568565430
+                </a>
+                <a href="mailto:anshadshanu888@gmail.com">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    anshadshanu888@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/anshad-karadan" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    LinkedIn Profile
+                </a>
+                <span>Ajman, UAE</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="profile">
+            <h2>PROFILE</h2>
+            <p>Creative and passionate content creator with 4+ years of experience in videography, photography, and YouTube content. Skilled in content planning, visual storytelling, and social media strategy. Driven by passion, not just profession - I genuinely enjoy turning ideas into visuals that connect with people. Seeking a role where I can grow creatively while contributing high-quality content that represents brand identity and engages audiences.</p>
+        </section>
+
+        <section id="work-samples">
+            <h2>VIDEOGRAPHY SAMPLES</h2>
+            <div class="work-samples">
+                <!-- Arte Museum Dubai -->
+                <div class="sample-card">
+                    <div class="thumbnail-container">
+                        <a href="https://drive.google.com/file/d/1uRTl1CWAq6wLqId8k8dWSC15fbrWFTVP/view" target="_blank">
+                            <img src="https://drive.google.com/uc?export=view&id=1zwfRbWRZAac0TC9hvbKZmZOkWkJ8CAq-" alt="Arte Museum Dubai">
+                            <div class="play-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#2563eb">
+                                    <path d="M8 5v14l11-7z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sample-info">
+                        <h3>Arte Museum Dubai x Unipreneur</h3>
+                        <p>Event coverage and storytelling</p>
+                    </div>
+                </div>
+                
+                <!-- GITEX YOUTHX BOWLING TOURNAMENT -->
+                <div class="sample-card">
+                    <div class="thumbnail-container">
+                        <a href="https://drive.google.com/file/d/1MUpygZCgtsIKvyVL2-toDrhQF9fXR6XO/view" target="_blank">
+                            <img src="https://drive.google.com/uc?export=view&id=1hOLZ1n8JYWt5XigGxUNolHQB9zJPzkMr" alt="GITEX Bowling Tournament">
+                            <div class="play-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#2563eb">
+                                    <path d="M8 5v14l11-7z"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sample-info">
+                        <h3>GITEX YOUTHX Bowling Tournament</h3>
+                        <p>Event coverage and highlights</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>WORK EXPERIENCE</h2>
+            
+            <div class="job">
+                <div class="job-title">
+                    <h3>YouTube – badguy 02 gaming</h3>
+                    <span class="date">2019–Present</span>
+                </div>
+                <p><em>Content Creator</em></p>
+                <ul>
+                    <li>Created 100+ videos in Malayalam</li>
+                    <li>Grew channel to 4.4K+ subscribers</li>
+                    <li>Handled thumbnails, editing, and voiceover</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-title">
+                    <h3>Unipreneur Inc – GITEX YouthX (UAE)</h3>
+                    <span class="date">2023</span>
+                </div>
+                <p><em>Content Creator</em></p>
+                <ul>
+                    <li>Captured & edited event footage</li>
+                    <li>Worked on reels and storytelling</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-title">
+                    <h3>Marvellous Art LLC (UAE)</h3>
+                    <span class="date">2022-2023</span>
+                </div>
+                <p><em>Admin & Procurement Assistant</em></p>
+                <ul>
+                    <li>Managed vendor communication, quotations, and purchase orders</li>
+                    <li>Supported procurement, documentation, and invoice handling</li>
+                    <li>Coordinated scheduling and project supply needs</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-title">
+                    <h3>Al Maza Supermarket</h3>
+                    <span class="date">2021-2022</span>
+                </div>
+                <p><em>Administrative Assistant – Ajman, UAE</em></p>
+                <ul>
+                    <li>Captured high-quality product images for in-store and online use</li>
+                    <li>Managed inventory logs and supplier coordination</li>
+                    <li>Handled admin documentation and POS cash operations</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>SKILLS</h2>
+            <div class="skills-container">
+                <span class="skill">Video Production</span>
+                <span class="skill">Photography</span>
+                <span class="skill">Adobe Premiere Pro</span>
+                <span class="skill">CapCut</span>
+                <span class="skill">Canva</span>
+                <span class="skill">Photoshop</span>
+                <span class="skill">YouTube SEO</span>
+                <span class="skill">Social Media Strategy</span>
+                <span class="skill">Event Coverage</span>
+                <span class="skill">Creative Storyboarding</span>
+                <span class="skill">MS Word</span>
+                <span class="skill">Excel</span>
+                <span class="skill">Tally</span>
+                <span class="skill">Vendor Communications</span>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>EDUCATION</h2>
+            <div class="education-item">
+                <h3>University of Calicut, India</h3>
+                <p class="date">Bachelor of Business Administration - Human Resource Management</p>
+            </div>
+            <div class="education-item">
+                <h3>Edu Star Academy, India</h3>
+                <p class="date">Diploma in Indian & Foreign Accounting</p>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>CERTIFICATES</h2>
+            <div class="certificate-item">
+                <h3>Fundamentals of Digital Marketing</h3>
+                <p class="date">Google Skillshop (2025) | Credential ID: 413133677</p>
+            </div>
+            <div class="certificate-item">
+                <h3>Graphic Design Basics</h3>
+                <p class="date">Alison (2024)</p>
+            </div>
+            <div class="certificate-item">
+                <h3>Social Media Content Strategy</h3>
+                <p class="date">Meta Blueprint (2025)</p>
+            </div>
+            <div class="certificate-item">
+                <h3>National Service Scheme (NSS)</h3>
+                <p class="date">Ministry of Youth Affairs, India (2018)</p>
+            </div>
+        </section>
+
+        <section id="languages">
+            <h2>LANGUAGES</h2>
+            <p>Malayalam (Native) | English (Fluent) | Hindi (Fluent) | Arabic (Basic)</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Anshad Karadan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
